@@ -12,7 +12,8 @@ const getBaseUrl = () => {
   return apiUrl;
 };
 
-export const baseURL = getBaseUrl();
+// change before commit
+export const baseURL = getBaseUrl() || 'http://localhost:3000';
 
 const client = axios.create({
   baseURL: `${baseURL}/api/v1`,
